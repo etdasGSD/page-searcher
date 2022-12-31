@@ -6,6 +6,7 @@
         <body style="background-color: rgb(35, 35, 35);">
           <label for="Page" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Page:</label>
           <input type="text" id="Page" page="Page" placeholder="Google.com">
+          <label for="search" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Word:</label>
           <input type="text" id="search" page="Page" placeholder="Google">
 
           <button id="thebuttonthatmakesitwork" onclick="Clickfunction()">Run</button>
@@ -19,15 +20,15 @@
             var pageText = document.body.innerText;
 
             var Output = document.getElementById("thedivlol")
-            const text = div.Output.textContent
+            const text = div.Output
             
             var Output2 = document.getElementById("anothadiv")
-            const text2 = div.Output2.textContent
+            const text2 = div.Output2
 
             // check if the page text contains the search word
             if (pageText.includes(Page)) {
-              text = "The word '" + PageSearchWord + "' was found on the page!";
+            text.innerText = "The word '" + PageSearchWord + "' was found on the page!";
             } else {
-              text2 = "The word '" + PageSearchWord + "' was not found on the page.";
+            text2.innerText = "The word '" + PageSearchWord + "' was not found on the page.";
             }}</script>
     </body>
