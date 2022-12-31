@@ -20,10 +20,10 @@
             var pageText = document.body.innerText;
 
             var Output = document.getElementById("thedivlol")
-            const text = div.Output
+            const text = Output
             
             var Output2 = document.getElementById("anothadiv")
-            const text2 = div.Output2
+            const text2 = Output2
 
             // check if the page text contains the search word
             if (pageText.includes(Page)) {
