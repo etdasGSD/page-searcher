@@ -16,7 +16,7 @@
          <script>
             function Clickfunction() {
         const Page = document.getElementById("Page")
-         var PageSearchWord = Page;
+         var PageSearchWord = Page.text;
             // get the text of the page
             var pageText = document.body.innerText;
 
