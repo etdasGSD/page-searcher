@@ -1,8 +1,20 @@
 <!DOCTYPE html>
-    <head class="fancy">
-        <title>Portfolio</title>
+    <head>
+        <title>Pagesearcher</title>
         <link rel="stylesheet" href="fancy.css">
         </head>
         <body style="background-color: rgb(35, 35, 35);">
-            <p>test</p>
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">test</p>
+          <label for="Page" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Page:</label>
+          <input type="text" id="Page" page="Page" placeholder="Google.com">
+          <script>var PageSearchWord = body.input.text;
+            // get the text of the page
+            var pageText = document.body.innerText;
+            
+            // check if the page text contains the search word
+            if (pageText.includes(Page)) {
+              console.log("The word '" + PageSearchWord + "' was found on the page!");
+            } else {
+              console.log("The word '" + PageSearchWord + "' was not found on the page.");
+            }</script>
     </body>
