@@ -3,8 +3,8 @@
         <title>Pagesearcher</title>
         <link rel="stylesheet" href="fancy.css">
         </head>
-        <div id="thedivlol"> letsseeifthisworksidklmao
         <body style="background-color: rgb(35, 35, 35);">
+        <div id="thedivlol"> letsseeifthisworksidklmao
           <label for="Page" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Page:</label>
           <input type="text" id="Page" page="Page" placeholder="Google.com">
          <script>
