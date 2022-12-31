@@ -4,10 +4,16 @@
         <link rel="stylesheet" href="fancy.css">
         </head>
         <body style="background-color: rgb(35, 35, 35);">
-        <div id="thedivlol"> letsseeifthisworksidklmao
           <label for="Page" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Page:</label>
           <input type="text" id="Page" page="Page" placeholder="Google.com">
+          <input type="text" id="search" page="Page" placeholder="Google">
+
+          <button id="thebuttonthatmakesitwork" onclick="Clickfunction()">Run</button>
+
+          <div id="thedivlol"> true </div>
+          <div id="anothadiv"> false </div>
          <script>
+            function Clickfunction() {
          var PageSearchWord = document.getElementById("Page");
             // get the text of the page
             var pageText = document.body.innerText;
@@ -15,11 +21,13 @@
             var Output = document.getElementById("thedivlol")
             const text = div.Output.textContent
             
+            var Output2 = document.getElementById("anothadiv")
+            const text2 = div.Output2.textContent
+
             // check if the page text contains the search word
             if (pageText.includes(Page)) {
               text = "The word '" + PageSearchWord + "' was found on the page!";
             } else {
-              text = "The word '" + PageSearchWord + "' was not found on the page.";
-            }</script>
-        </div>
+              text2 = "The word '" + PageSearchWord + "' was not found on the page.";
+            }}</script>
     </body>
