@@ -15,7 +15,8 @@
           <div id="anothadiv"> false </div>
          <script>
             function Clickfunction() {
-         var PageSearchWord = document.getElementById("Page");
+        const Page = document.getElementById("Page")
+         var PageSearchWord = Page;
             // get the text of the page
             var pageText = document.body.innerText;
 
