@@ -3,17 +3,17 @@
         <title>Pagesearcher</title>
         <link rel="stylesheet" href="fancy.css">
         </head>
+        <div id="thedivlol"> letsseeifthisworksidklmao
         <body style="background-color: rgb(35, 35, 35);">
-            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">test</p>
           <label for="Page" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Page:</label>
           <input type="text" id="Page" page="Page" placeholder="Google.com">
-          <input type="text" id="Thepageinput">
          <script>
          var PageSearchWord = document.getElementById("Page");
             // get the text of the page
             var pageText = document.body.innerText;
 
-            var Output = document.getElementById("Thepageinput")
+            var Output = document.getElementById("thedivlol")
+            const text = div.Output.textContent
             
             // check if the page text contains the search word
             if (pageText.includes(Page)) {
@@ -21,4 +21,5 @@
             } else {
               Output.text = "The word '" + PageSearchWord + "' was not found on the page.";
             }</script>
+        </div>
     </body>
