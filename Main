@@ -17,9 +17,9 @@
             
             // check if the page text contains the search word
             if (pageText.includes(Page)) {
-              Output.text = "The word '" + PageSearchWord + "' was found on the page!";
+              text = "The word '" + PageSearchWord + "' was found on the page!";
             } else {
-              Output.text = "The word '" + PageSearchWord + "' was not found on the page.";
+              text = "The word '" + PageSearchWord + "' was not found on the page.";
             }</script>
         </div>
     </body>
