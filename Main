@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-    <head>
+    <head class="fancy">
         <title>Portfolio</title>
         <link rel="stylesheet" href="fancy.css">
         </head>
         <body style="background-color: rgb(35, 35, 35);">
-        <div class="middle">
             <p>test</p>
-        </div>
     </body>
