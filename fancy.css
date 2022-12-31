@@ -1,0 +1,14 @@
+div.middle {
+    height: 10em;
+    position: relative }
+div.middle {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
