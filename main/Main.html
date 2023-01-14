@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title>Pagesearcher</title>
+        <link rel="stylesheet" href="resources/fancy.css">
+        <link rel="shortcut icon" href="resources/Screenshot 2022-12-30 194619.jpg">
+        </head>
+        <body style="background-color: rgb(32, 32, 32);">
+          <label for="Page" style="color: rgb(255, 255, 255);">Page:</label>
+          <input type="text" id="Page" page="Page" style="color: rgb(0,0,0)" placeholder="https://www.google.com/">
+          <label for="Page" style="color: rgb(255, 255, 255);">Word:</label>
+          <input type="text" id="Search" page="Page2" style="color: rgb(0,0,0)" placeholder="google">
+          <button id="thebuttonthatmakesitwork" onclick="Clickfunction()">Run</button>
+          <div id="thedivlol" style="color: rgb(255, 255, 255)"> true </div>
+          <div id="anothadiv" style="color: rgb(255, 255, 255)"> false </div>
+         <script> type="text/javascript"
+            function Clickfunction() {
+	// set up consts
+        const Page = document.getElementById("Page")
+ 	const Page2 = document.getElementById("Page2")
+	const Search = document.getElementById("Search")
+	// gets the text box
+         var PageSearchWord = Search.innerText;
+            // get the text of the actual page
+            var pageText = document.body.innerText;
+
+            var Output = document.getElementById("thedivlol")
+            const text = Output
+            
+            var Output2 = document.getElementById("anothadiv")
+            const text2 = Output2
+
+            // check if the page text contains the search word
+            if (pageText.includes(Page)) {
+            text.innerText = "The word '" + PageSearchWord + "' was found on the page!";
+            } else {
+            text2.innerText = "The word '" + PageSearchWord + "' was not found on the page.";
+            }
+         }
+    </script>
+</body>
